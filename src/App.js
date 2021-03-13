@@ -1,6 +1,34 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import { Grid } from './components';
 
+
+export default class App extends Component 
+{
+  render()
+  {
+    return (
+      <div className="React_Grid">
+        <Grid />
+      </div>
+    );
+  }
+}
+
+/*
+function App() {
+  return (
+    <div className="App">
+      <Grid />
+    </div>
+  );
+}
+
+
+export default App;
+*/
+
+/*
 function App() {
   return (
     <div className="App">
@@ -23,3 +51,5 @@ function App() {
 }
 
 export default App;
+
+*/

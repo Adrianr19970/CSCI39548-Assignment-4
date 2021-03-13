@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
+.interface {
+  padding-left: 28%;
+  padding-top: .5%;
+  padding-bottom: .7%;
+  background-color: white;
+  border-bottom: 3px solid;
+
+  animation: none;
+  color: #000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes rgb {
+  from {
+      color: #ffff00;
   }
+  8% {
+      color: #9acd32;
+  }
+  16% {
+      color: #00ff00;
+  }
+  24% {
+      color: #0d98ba;
+  }
+  32% {
+      color: #0000ff;
+  }
+  40% {
+      color: #8a2be2;
+  }
+  48% {
+      color: #7f00ff;
+  }
+  56% {
+      color: #c71585;
+  }
+  64% {
+      color: #ff0000;
+  }
+  72% {
+      color: #ff5349;
+  }
+  80% {
+      color: #ffa500;
+  }
+  88% {
+      color: #f8d568;
+  }
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+hr {
+  border: none;
+}
+
+button {
+  border-style: solid;
+  padding-left: 2px;
+  padding-right: 2px;
+  background: white;
+  border: 1px solid black;
+}
+
+button p {
+  color: black;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-size: .75vw;
+}
+
+button:hover {
+  background: black;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+button:hover p {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+select {
+  border-color: black;
+  border-style: solid;
+  padding: 14px;
+  font-size: .75vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+select:hover {
+  background: black;
+  text-decoration: none;
+  transition: color 0.2s;
+  color: white;
 }
+
+#checkBoxlabel{
+background-color: white;
+color: black;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-size: .75vw;
+
+}
+
+#customPalette_label{
+background-color: white;
+color: black;
+  font-size: .75vw;
+width:20%;
+float:left;
+}
+#palette{
+width:60%;
+font-size:.75vw;
+
+}
+
+
+#customPalette{
+padding-left: 3px;
+padding-right: 3px;
+border: 1px solid;
+width: 30%;
+font-size: .75vw;
+background-color:white;
+display: inline-block;
+}
+
+/* --------------- */
+
+/* Table CSS */
+#grid {
+  padding-left: 10px;
+}
+
+tr, td {
+  border: 1px;
+  border-style: solid;
+  border-color: #000;
+}
+
+td {
+  height: 50px;
+  width: 50px;
+  
+}
+
+/* --------------- */
