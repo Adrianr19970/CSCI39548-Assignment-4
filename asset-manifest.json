@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/csci39548-assignment-4/static/css/main.b09af41e.chunk.css",
-    "main.js": "/csci39548-assignment-4/static/js/main.07b573c3.chunk.js",
-    "main.js.map": "/csci39548-assignment-4/static/js/main.07b573c3.chunk.js.map",
-    "runtime-main.js": "/csci39548-assignment-4/static/js/runtime-main.87f31c6b.js",
-    "runtime-main.js.map": "/csci39548-assignment-4/static/js/runtime-main.87f31c6b.js.map",
-    "static/js/2.59a52280.chunk.js": "/csci39548-assignment-4/static/js/2.59a52280.chunk.js",
-    "static/js/2.59a52280.chunk.js.map": "/csci39548-assignment-4/static/js/2.59a52280.chunk.js.map",
-    "static/js/3.99de3417.chunk.js": "/csci39548-assignment-4/static/js/3.99de3417.chunk.js",
-    "static/js/3.99de3417.chunk.js.map": "/csci39548-assignment-4/static/js/3.99de3417.chunk.js.map",
-    "index.html": "/csci39548-assignment-4/index.html",
-    "static/css/main.b09af41e.chunk.css.map": "/csci39548-assignment-4/static/css/main.b09af41e.chunk.css.map",
-    "static/js/2.59a52280.chunk.js.LICENSE.txt": "/csci39548-assignment-4/static/js/2.59a52280.chunk.js.LICENSE.txt"
+    "main.css": "/CSCI39548-Assignment-4/static/css/main.b09af41e.chunk.css",
+    "main.js": "/CSCI39548-Assignment-4/static/js/main.07b573c3.chunk.js",
+    "main.js.map": "/CSCI39548-Assignment-4/static/js/main.07b573c3.chunk.js.map",
+    "runtime-main.js": "/CSCI39548-Assignment-4/static/js/runtime-main.b68e09fd.js",
+    "runtime-main.js.map": "/CSCI39548-Assignment-4/static/js/runtime-main.b68e09fd.js.map",
+    "static/js/2.59a52280.chunk.js": "/CSCI39548-Assignment-4/static/js/2.59a52280.chunk.js",
+    "static/js/2.59a52280.chunk.js.map": "/CSCI39548-Assignment-4/static/js/2.59a52280.chunk.js.map",
+    "static/js/3.99de3417.chunk.js": "/CSCI39548-Assignment-4/static/js/3.99de3417.chunk.js",
+    "static/js/3.99de3417.chunk.js.map": "/CSCI39548-Assignment-4/static/js/3.99de3417.chunk.js.map",
+    "index.html": "/CSCI39548-Assignment-4/index.html",
+    "static/css/main.b09af41e.chunk.css.map": "/CSCI39548-Assignment-4/static/css/main.b09af41e.chunk.css.map",
+    "static/js/2.59a52280.chunk.js.LICENSE.txt": "/CSCI39548-Assignment-4/static/js/2.59a52280.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.87f31c6b.js",
+    "static/js/runtime-main.b68e09fd.js",
     "static/js/2.59a52280.chunk.js",
     "static/css/main.b09af41e.chunk.css",
     "static/js/main.07b573c3.chunk.js"
