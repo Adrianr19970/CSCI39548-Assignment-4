@@ -69,7 +69,7 @@ export default class Grid extends Component
 
             for (let y = 0; y < num_Cols; y++)
             {
-                columns.push(<GridCell key={x+y.toString()} color={this.state.color} />);
+                columns.push(<GridCell key={x+y.toString()} color={this.state.color} changeColor={this.changeColor}/>);
             }
             rows.push(<GridRow key={x.toString()} cells={columns} color={this.state.color} />);
         }
@@ -118,9 +118,14 @@ export default class Grid extends Component
             console.log("Pressed removeC");
         }
     }
-
+	
     selectedColor = (event) =>
     {
         this.setState({ color: event.target.value });
     }
+	
+	changeColor = (event) =>
+	{
+		event.target.style.backgroundColor= this.state.color;
+	}
 }

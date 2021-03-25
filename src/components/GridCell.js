@@ -16,7 +16,7 @@ export default class GridCell extends Component
     render()
     {
         return (
-            <td className="grid_cell"/>
+            <td className="grid_cell" onClick={this.props.changeColor}/>
         );
     }
 
