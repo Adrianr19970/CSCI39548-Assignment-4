@@ -10,7 +10,8 @@ export default class Grid extends Component
         {
             num_Cols: 1,
             num_Rows: 1,
-            color: "white"
+            color: "white",
+			fillU: false
         }
     }
 
@@ -69,11 +70,11 @@ export default class Grid extends Component
 
             for (let y = 0; y < num_Cols; y++)
             {
-                columns.push(<GridCell key={x+y.toString()} color={this.state.color} changeColor={this.changeColor}/>);
+                columns.push(<GridCell key={x+y.toString()} color={this.state.color} changeColor={this.changeColor} fillU={this.state.fillU}/>);
             }
             rows.push(<GridRow key={x.toString()} cells={columns} color={this.state.color} />);
         }
-
+		this.state.fillU=false;
         return rows;
     }
 
@@ -124,8 +125,10 @@ export default class Grid extends Component
         this.setState({ color: event.target.value });
     }
 	
-	changeColor = (event) =>
+	
+	
+	fillU = () =>
 	{
-		event.target.style.backgroundColor= this.state.color;
+		this.setState({fillU:true});
 	}
 }

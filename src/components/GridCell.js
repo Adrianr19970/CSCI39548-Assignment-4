@@ -15,10 +15,21 @@ export default class GridCell extends Component
       
     render()
     {
+		if(this.props.fillU && this.state.color==="white"){
+			this.state.color=this.props.color;
+			return (
+				<td className="grid_cell" onClick={this.changeColor} style={{backgroundColor:this.props.color}}/>
+			);
+		}
         return (
-            <td className="grid_cell" onClick={this.props.changeColor}/>
+            <td className="grid_cell" onClick={this.changeColor} style={{backgroundColor:this.state.color}}/>
         );
     }
+	
+	changeColor = () =>
+	{
+		this.setState({color:this.props.color});
+	}
 
 }
 
