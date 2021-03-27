@@ -11,7 +11,9 @@ export default class Grid extends Component
             num_Cols: 1,
             num_Rows: 1,
             color: "white",
-			fillU: false
+            fillU: false,
+            fill: false,
+            clearAll: false,
         }
     }
 
@@ -70,11 +72,13 @@ export default class Grid extends Component
 
             for (let y = 0; y < num_Cols; y++)
             {
-                columns.push(<GridCell key={x+y.toString()} color={this.state.color} changeColor={this.changeColor} fillU={this.state.fillU}/>);
+                columns.push(<GridCell key={x+y.toString()} color={this.state.color} changeColor={this.changeColor} fillU={this.state.fillU} fill={this.state.fill} />);
             }
             rows.push(<GridRow key={x.toString()} cells={columns} color={this.state.color} />);
         }
-		this.state.fillU=false;
+        //After grid is created, set all the options (fill uncolored, fill all, and clear) to false.
+        this.state.fillU=false;
+        this.state.fill = false;
         return rows;
     }
 
@@ -130,5 +134,18 @@ export default class Grid extends Component
 	fillU = () =>
 	{
 		this.setState({fillU:true});
-	}
+    }
+    
+    /*
+    The way this method works is similar to ^^, once user clicks fillAll, it 
+    triggers this method which will set the state of fill to be true, allowing 
+    the handling of each gridCell to happen in that file. In createGrid, after the 
+    grid is created, the states are set to false. 
+    */
+    fill = () =>
+    {
+        this.setState({fill:true});
+    }
+
+    
 }
