@@ -72,13 +72,14 @@ export default class Grid extends Component
 
             for (let y = 0; y < num_Cols; y++)
             {
-                columns.push(<GridCell key={x+y.toString()} color={this.state.color} changeColor={this.changeColor} fillU={this.state.fillU} fill={this.state.fill} />);
+                columns.push(<GridCell key={x+y.toString()} color={this.state.color} changeColor={this.changeColor} fillU={this.state.fillU} fill={this.state.fill} clearAll={this.state.clearAll}/>);
             }
             rows.push(<GridRow key={x.toString()} cells={columns} color={this.state.color} />);
         }
         //After grid is created, set all the options (fill uncolored, fill all, and clear) to false.
         this.state.fillU=false;
         this.state.fill = false;
+        this.state.clearAll = false;
         return rows;
     }
 
@@ -147,5 +148,14 @@ export default class Grid extends Component
         this.setState({fill:true});
     }
 
-    
+    /*
+    The way this method works is similar to ^^^, once user clicks clear, it 
+    triggers this method which will set the state of clearAll to be true, allowing 
+    the handling of each gridCell to happen in that file. In createGrid, after the 
+    grid is created, the states are set to false. 
+    */
+   clearAll = () => //using DOM elements/methods
+   {
+       this.setState({clearAll:true});
+   }
 }

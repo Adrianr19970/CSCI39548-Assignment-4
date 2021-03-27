@@ -27,6 +27,12 @@ export default class GridCell extends Component
 				<td className="grid_cell" onClick={this.changeColor} style={{backgroundColor:this.props.color}}/>
 			);
         }
+        else if(this.props.clearAll){
+			this.state.color="white"; //the state is back to its original color (white)
+			return (
+				<td className="grid_cell" onClick={this.changeColor} style={{backgroundColor:"white"}}/> //changed cell color to white
+			);
+        }
         return (
             <td className="grid_cell" onClick={this.changeColor} style={{backgroundColor:this.state.color}}/>
         );
